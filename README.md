@@ -7,7 +7,7 @@ Demo for 0.0.5 version: http://nliplace.com/Pretorian-Crawler/
 
 
 
-More hacks and tools at: nliplace.com
+More hacks and tools at: http://nliplace.com/
 
-An awsome place: hatchatelier.ro
+An awesome place: http://hatchatelier.ro/
 
