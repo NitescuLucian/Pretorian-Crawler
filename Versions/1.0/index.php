@@ -13,7 +13,7 @@
             <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><span>Pretorian Crawler by nli</span></a></div>
             <div class="collapse navbar-collapse" id="navbar-ex-collapse">
                <ul class="nav navbar-nav navbar-right">
-                 <li class="active"><a href="https://github.com/nliplace/Pretorian-Crawler.git" target="_blank">Download</a></li>
+                  <li class="active"><a href="https://github.com/nliplace/Pretorian-Crawler.git" target="_blank">Download</a></li>
                </ul>
             </div>
          </div>
@@ -33,7 +33,7 @@
                  </div> 
                 
 <?php
-
+error_reporting(0);
 ini_set('display_errors', 0);
 $i = 1;
 $to_crawl = $_GET["site"];
@@ -91,7 +91,6 @@ function get_links($url) {
 	}
 	
 }
-if (substr($to_crawl,0,4)=='http'){
 // we use the functions to crawl
 get_links($to_crawl);
 
@@ -104,7 +103,6 @@ foreach ($c as $page) {
 	$array[$sas] = $page;
 	$sas++;
 	}
-}
 }
 // we use this values to list things
 $lel=array_unique($array);
@@ -239,7 +237,7 @@ for($i = 1; $i <= count($lel); $i++){
 			?>
 		</a>
   <?php	
-	} 
+	}
    ?>
 </div>
 </div>
@@ -255,8 +253,8 @@ for($i = 1; $i <= count($lel); $i++){
                <div class="col-sm-6">
                   <h1>Desclaimer</h1>
                   <p>This PHP application is under Apache License 2.0 </br>
-                  Credits to Nitescu Lucian | nliplace.com </p>
-                   <p>Developed at hatchatelier.ro</p>
+                  Credits to Nitescu Lucian | nliplace.com</p>
+                  <p>Developed at hatchatelier.ro</p>
                </div>
             </div>
          </div>
